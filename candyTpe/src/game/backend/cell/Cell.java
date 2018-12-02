@@ -72,6 +72,9 @@ public class Cell {
 		return null;
 	}
 
+	/* La funcion borra el elemento de la celda de arriba, se adjudica su elemento, refresca la grilla,
+	*  luego termina o el elemento vuelve a caer dependiendo de si hay o no un piso */
+
 	public boolean fallUpperContent() {
 		Cell up = around[Direction.UP.ordinal()];
 		if (this.isEmpty() && !up.isEmpty() && up.isMovable()) {
