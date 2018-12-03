@@ -20,6 +20,9 @@ public class MoveMaker {
 		initMap();
 	}
 
+	/* Cambiaría esta función, ya que los Move son simétricos hay instancias que sobran.
+	* */
+
 	private void initMap(){
 		map = new HashMap<>();
 		map.put(new Candy().getKey() + new Candy().getKey(), new CandyMove(grid));

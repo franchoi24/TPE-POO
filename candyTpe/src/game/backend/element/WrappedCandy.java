@@ -2,6 +2,9 @@ package game.backend.element;
 
 import game.backend.move.Direction;
 
+
+/* Las clases HorizontalStriped, VerticalStriped y Wrapped se comportan de manera muy similar. Crearía clases abstractas por cuestion de estilo*/
+
 public class WrappedCandy extends Candy {
 	
 	private Direction[] explosion = new Direction[4];
